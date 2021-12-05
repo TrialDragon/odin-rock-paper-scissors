@@ -1,7 +1,12 @@
 let playerScore = 0;
 let computerScore = 0;
 
-const results = document.querySelector('.result');
+
+
+const playerScoreElement = document.querySelector('.results .left.number');
+const computerScoreElement = document.querySelector('.results .right.number');
+const resultText = document.querySelector('.results p');
+
 const buttons = document.querySelectorAll('button[data-choice]');
 buttons.forEach(button =>
 	{
@@ -9,6 +14,10 @@ buttons.forEach(button =>
 		{
 			let result = playRound(e.target.getAttribute('data-choice')
 					, computerPlay());
+
+			playerScoreElement.textContent = playerScore;
+			computerScoreElement.textContent = computerScore;
+			resultText.textContent = result;
 
 			if(playerScore >= 5)
 			{
