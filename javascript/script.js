@@ -19,14 +19,23 @@ buttons.forEach(button =>
 			computerScoreElement.textContent = computerScore;
 			resultText.textContent = result;
 
-			if(playerScore >= 5)
+			if(playerScore >= 5 || computerScore >= 5)
 			{
-				alert("You Won the Series!");
+				if(playerScore >= 5)
+				{
+					alert("You Won the Series!");
+				}
+				else if(computerScore >= 5)
+				{
+					alert("You Lost the Series!");
+				}
+				playerScore = 0;
+				computerScore = 0;
+				playerScoreElement.textContent = playerScore;
+				computerScoreElement.textContent = computerScore;
+				resultText.textContent = 'Click a button to play!';
 			}
-			else if(computerScore >= 5)
-			{
-				alert("You Lost the Series!");
-			}
+			
 
 		})
 	})
