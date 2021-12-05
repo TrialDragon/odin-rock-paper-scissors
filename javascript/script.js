@@ -9,10 +9,6 @@ buttons.forEach(button =>
 		{
 			let result = playRound(e.target.getAttribute('data-choice')
 					, computerPlay());
-			
-			let text = `${playerScore} : ${computerScore} ${result}`;
-			
-			results.textContent = text;
 
 			if(playerScore >= 5)
 			{
