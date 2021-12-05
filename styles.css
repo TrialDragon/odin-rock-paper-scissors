@@ -36,7 +36,7 @@ header h1 {
 	
 }
 
-.content .results * {
+.results .number, .results .score-title, .results p{
 	background-color: #0049B7;
 }
 
@@ -95,6 +95,23 @@ header h1 {
 
 .results *, .buttons button {
 	box-shadow: 4px 4px black;
+}
+
+.results .left, .results .right {
+	box-shadow: none;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 8px;
+}
+
+.left .score-title, .right .score-title {
+	border-radius: 4px;
+	font-family: 'Comfortaa', cursive;
+	font-size: 16px;
+	font-weight: 800;
+	min-width: 100px;
+	padding: 6px;
 }
 
 

@@ -3,8 +3,8 @@ let computerScore = 0;
 
 
 
-const playerScoreElement = document.querySelector('.results .left.number');
-const computerScoreElement = document.querySelector('.results .right.number');
+const playerScoreElement = document.querySelector('.results .left .number');
+const computerScoreElement = document.querySelector('.results .right .number');
 const resultText = document.querySelector('.results p');
 
 const buttons = document.querySelectorAll('button[data-choice]');
