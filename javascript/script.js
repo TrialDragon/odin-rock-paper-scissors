@@ -53,9 +53,5 @@ function playRound(playerSelection, computerSelection)
 
 function game()
 {
-	for(let loop = 0; loop < 5; ++loop)
-	{
-		let playerPlay = prompt("Enter rock, paper, or scissors");
-		console.log(playRound(playerPlay, computerPlay()));
-	}
+	
 }
