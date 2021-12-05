@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comfortaa:wght@300;400;500;600;700&family=Dosis:wght@200;300;400;500;600;700;800&display=swap');
+
+body {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	text-align: center;
+	margin: 0;
+	color: #FFF685;
+	font-family: 'Bebas Neue', cursive;
+	background-color: #00DDFF;
+	justify-content: space-between;
+	height: 100vh;
+}
+
+header {
+	background-color: #FF1D58;
+	font-size: 28px;
+	padding: 30px;
+}
+
+header h1 {
+	margin: 0;
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
+	gap: 70px;
+}
+
+.content .results {
+	font-family: 'Dosis', sans-serif;
+	display: flex;
+	justify-content: space-around;
+	
+}
+
+.content .results * {
+	background-color: #0049B7;
+}
+
+.results p {
+	min-width: 100px;
+	max-width: 400px;
+	padding: 10px 30px;
+	border-radius: 10px;
+	font-size: 20px;
+	font-family: 'Comfortaa', cursive;
+	font-weight: 500;
+}
+
+.results .number {
+	width: 50px;
+	height: 50px;
+	font-size: 26px;
+	border-radius: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+
+.buttons {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	gap: 36px;
+
+}
+
+.buttons button {
+	background-color: #F75990;
+	color: #FFF685;
+	min-width: 85px;
+	min-height: 30px;
+	font-size: 22px;
+	font-family: 'Comfortaa', cursive;
+	font-weight: 700;
+	border-radius: 8px;
+	border: none;
+}
+
+.buttons button:hover {
+	background-color: #dd4f81;
+	box-shadow: -4px -4px;
+}
+
+.top-of-page {
+	display: flex;
+	flex-direction: column;
+	gap: 80px;
+}
+
+.results *, .buttons button {
+	box-shadow: 4px 4px black;
+}
+
+
+
+footer {
+	background-color: #FF1D58;
+	padding: 40px;
+	font-size: 20px;
+}
+
+footer span {
+	margin: 0 10px;
+}
