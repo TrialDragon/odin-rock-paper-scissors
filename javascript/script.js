@@ -1,3 +1,31 @@
+let playerScore = 0;
+let computerScore = 0;
+
+const results = document.querySelector('.result');
+const buttons = document.querySelectorAll('button[data-choice]');
+buttons.forEach(button =>
+	{
+		button.addEventListener('click', e =>
+		{
+			let result = playRound(e.target.getAttribute('data-choice')
+					, computerPlay());
+			
+			let text = `${playerScore} : ${computerScore} ${result}`;
+			
+			results.textContent = text;
+
+			if(playerScore >= 5)
+			{
+				alert("You Won the Series!");
+			}
+			else if(computerScore >= 5)
+			{
+				alert("You Lost the Series!");
+			}
+
+		})
+	})
+
 function computerPlay()
 {
 	let choice = "";
@@ -39,10 +67,12 @@ function playRound(playerSelection, computerSelection)
 	
 	if(playerWin)
 	{
+		++playerScore;
 		return `You Win! ${playerSelection} beats ${computerSelection}`;
 	}
 	else if(computerWin)
 	{
+		++computerScore;
 		return `You Lose! ${computerSelection} beats ${playerSelection}`;
 	}
 	else
